@@ -4,7 +4,7 @@
         <h1>Hello World</h1>
     `;
 
-    customElements.define('Helloworldd', class HelloWorld1 extends HTMLElement {
+    customElements.define('Prueba1', class HelloWorld1 extends HTMLElement {
 
 
         constructor() {
