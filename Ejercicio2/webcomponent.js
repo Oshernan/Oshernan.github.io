@@ -4,7 +4,7 @@
         <h1>Primera prueba de Custom Widget</h1>
     `;
 
-    customElements.define('com-sap-sample-helloworld2', class HelloWorld2 extends HTMLElement {
+    customElements.define('com-sap-sample-helloworld2prep', class HelloWorld2 extends HTMLElement {
 
 
         constructor() {
