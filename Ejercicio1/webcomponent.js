@@ -1,7 +1,7 @@
 (function()  {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
-        <h1>Hola!!!</h1>
+        <h1>Hello World</h1>
     `;
 
     customElements.define('com-sap-sample-helloworld2', class HelloWorld2 extends HTMLElement {
@@ -35,9 +35,9 @@
         onCustomWidgetAfterUpdate(oChangedProperties) {
         }
         
-            //When the custom widget is removed from the canvas or the analytic application is closed
-            onCustomWidgetDestroy(){
-            }
+        //When the custom widget is removed from the canvas or the analytic application is closed
+        onCustomWidgetDestroy(){
+        }
 
         
         //When the custom widget is resized on the canvas, the Custom Widget SDK framework executes the following JavaScript function call on the custom widget
