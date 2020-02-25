@@ -1,7 +1,7 @@
 (function()  {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
-        <h1>Primera prueba de Custom Widget</h1>
+        <h1>Hola!!!</h1>
     `;
 
     customElements.define('com-sap-sample-helloworld2', class HelloWorld2 extends HTMLElement {
@@ -12,6 +12,7 @@
             this._shadowRoot = this.attachShadow({mode: "open"});
             this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
             this._firstConnection = false;
+
         }
 
         //Fired when the widget is added to the html DOM of the page
@@ -32,9 +33,6 @@
 
         //When the custom widget is updated, the Custom Widget SDK framework executes this function after the update
         onCustomWidgetAfterUpdate(oChangedProperties) {
-            if (this._firstConnection){
-                this.redraw();
-            }
         }
         
             //When the custom widget is removed from the canvas or the analytic application is closed
