@@ -3,7 +3,7 @@
     tmpl.innerHTML = `
 `;
 
-    customElements.define('com-sap-sample-helloworld3', class HelloWorld extends HTMLElement {
+    customElements.define('com-sap-sample-helloworld2', class HelloWorld1 extends HTMLElement {
 
 
         constructor() {
@@ -71,6 +71,7 @@
             var theText = document.createTextNode(this._tagText);    
             this._tagContainer.appendChild(theText); 
             this._shadowRoot.appendChild(this._tagContainer);
+
         }
         
     });
