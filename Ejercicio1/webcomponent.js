@@ -4,7 +4,7 @@
         <h1>Hello World</h1>
     `;
 
-    customElements.define('com-sap-sample-helloworld2', class HelloWorld1 extends HTMLElement {
+    class HelloWorld1 extends HTMLElement {
 
 
         constructor() {
@@ -44,6 +44,8 @@
         }
         */
 
-        redraw(){}
-    });
+        redraw();
+    }
+    customElements.define("com-sap-sample-helloworld2", HelloWorld1);
+
 })();
